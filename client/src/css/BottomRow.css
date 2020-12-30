@@ -1,0 +1,86 @@
+.bottomButton {
+    text-align: center;
+    border-radius: 5px;
+    background-color:#003A48 !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.darkMode .bottomButton {
+    background-color: rgb(13, 133, 133) !important;
+}
+
+.bottomButton:hover {
+    background-color:#055164 !important;
+}
+
+.darkMode .bottomButton:hover {
+    background-color: rgb(26, 163, 163) !important;
+}
+
+.tools {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+/* .tools input {
+    margin-left: 20px;
+} */
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons div {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.icons div:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.colors {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 50px;
+}
+
+.color {
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.color:hover {
+    border: 2px solid black;
+    /* box-shadow: inset 0 0 10px rgb(0, 0, 0);; */
+}
+
+@media only screen and (max-width: 1600px) {
+    .colors {
+        overflow: auto;
+        width: 400px;
+    }
+  }

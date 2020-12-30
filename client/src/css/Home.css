@@ -1,0 +1,88 @@
+:root {
+	--dark-color-a: #2F3136;
+	--dark-color-b: #ffffff;
+	--light-color: #C8C8C8;
+	--success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
+.join-container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: rgb(0, 0, 0);
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+.join-header {
+    color: white;
+	text-align: center;
+	padding: 20px;
+	background: #003A48;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	user-select: none;
+}
+
+.darkMode .join-header {
+	background: var(--dark-color-a) !important;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.room {
+    cursor: pointer;
+}
+
+.room:hover {
+    font-weight: bold;
+}

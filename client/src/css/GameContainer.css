@@ -1,0 +1,30 @@
+.gameContainer {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 300px 1000px 300px;
+    grid-template-rows: 50px 750px 50px; 
+    gap: 10px;
+    /* column-gap: 20px; */
+    grid-template-areas: 
+        "interface interface interface"
+        "playerlist canvas chat"
+        ;
+    overflow: hidden;
+}
+
+.gameContainer div {
+    background-color: #F2F3F5;
+    color: rgb(46, 51, 56);
+}
+
+.darkMode .gameContainer div {
+    background-color: #36393F;
+    color: rgb(220, 221, 222) !important;
+}
+
+@media only screen and (max-width: 1600px) {
+    .gameContainer {
+        grid-template-columns: 250px 800px 250px;
+        grid-template-rows: 50px 600px 50px; 
+    }
+  }

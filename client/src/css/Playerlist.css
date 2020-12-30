@@ -1,0 +1,78 @@
+.playerlist {
+    /* border-radius: 0 0 0 5px; */
+    border-radius: 5px;
+    user-select: none;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.playerlist ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.player {
+    position: relative;
+    /* text-align: center; */
+    padding-left: 80px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* border-bottom: 2px solid rgb(219, 219, 219); */
+    cursor: pointer;
+}
+
+.player:hover {
+    transform: scale(1.03);
+}
+
+.player .playerName {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.player:nth-child(even) {
+    background-color: #fff; 
+}
+.darkMode .player:nth-child(even) {
+    background-color: #32353B; 
+}
+
+.playerlist .score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(15, 126, 177);
+    text-shadow: #32353B;
+}
+
+.playerlist .playerPlace {
+    font-weight: 800;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+.playerlist .avatar {
+    left: 10px;
+    margin: 0;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border: 2px rgb(19, 94, 124) solid; 
+    background: white;
+}
+
+.player .playerStatus {
+    right: 5px;
+    top: 5px;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+/* .darkMode .playerlist li {
+    border-bottom: 1px solid #7c7c7c
+} */
